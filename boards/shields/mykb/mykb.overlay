@@ -1,0 +1,16 @@
+/ {
+    compatible = "zmk,shield";
+
+    matrix {
+        row-size = <3>;
+        col-size = <5>;
+        row-gpios = <&gpio0 6 GPIO_ACTIVE_LOW>,
+                    <&gpio0 7 GPIO_ACTIVE_LOW>,
+                    <&gpio0 8 GPIO_ACTIVE_LOW>;
+        col-gpios = <&gpio0 12 GPIO_ACTIVE_LOW>,
+                    <&gpio0 13 GPIO_ACTIVE_LOW>,
+                    <&gpio0 14 GPIO_ACTIVE_LOW>,
+                    <&gpio0 15 GPIO_ACTIVE_LOW>,
+                    <&gpio0 16 GPIO_ACTIVE_LOW>;
+    };
+};
